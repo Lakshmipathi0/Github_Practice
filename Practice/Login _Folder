@@ -1,0 +1,17 @@
+public class practice {
+
+
+   Webdriver driver; 
+
+    public void login() {
+
+        driver = new Chromedriver();
+        WebElement email = driver.findElement(By.id("Username"));
+       email.sendkeys("Lakshmipathi");
+
+        WebElement password = driver.findElement(By.password("Password"));
+        password.sendkeys("Lakshmipathi")
+
+    }
+
+}
