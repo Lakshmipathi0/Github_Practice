@@ -1,0 +1,9 @@
+public class rider {
+
+public void name ()
+{
+
+System.out.println("Hello Programmer";
+
+}
+}
