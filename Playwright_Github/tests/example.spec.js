@@ -17,3 +17,10 @@ test('get started link', async ({ page }) => {
   // Expects page to have a heading with the name of Installation.
   await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
 });
+
+test('has string message', async({page}) => {
+  await page.goto('https://playwright.dev/');
+
+  await expect(page.getByText("Playwright enables reliable web automation for testing, scripting, and AI agents.")).toBeVisible();
+
+})
